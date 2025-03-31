@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script> <!-- Ensure this script is correct -->
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Bimo Adi Bramantyo</a> <!-- Updated link -->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navmenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li> <!-- Updated link -->
+        </ul>
+        <div class="dark-mode-switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <label for="dark-mode-toggle" class="switch"></label>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h2>Hello, I'm Bram <i class="ph-bold ph-hand-waving"></i></h2>
+            <h3>Front-End Developer & UI Designer</h3>
+            <p>I'm a Front-End and UI Designer based in jakarta,
+                I put all of my passion into my work and dedicated to it.</p>
+            <div class="home-btn">
+                <a href="#" class="btn">Contact Info</a>
+                <a href="#" class="btn">Download CV <i class="ph ph-read-cv-logo"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="img/profile-pic.png">
+        </div>
+        <div class="social-links">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph ph-github-logo"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-img-grid">
+            <img src="img/first-img.jpg" alt="First Image">
+            <img src="img/second-img.jpg" alt="Second Image">
+            <img src="img/third-img.jpg" alt="Third Image">
+            <img src="img/fourth-img.jpg" alt="Fourth Image">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate Front-End Developer & UI Designer based in Jakarta. 
+                I specialize in crafting modern, responsive, and user-friendly web experiences. 
+                My focus is on writing clean code and designing visually appealing interfaces.
+            </p>
+            <p>
+                I enjoy learning new technologies and constantly improving my skills. 
+                When I'm not coding, you can find me exploring new design trends or collaborate on exciting projects.
+                I start learning about some photography these days.
+            </p>
+            <a href="#" class="btn">Read More</a>
+            <a href="#portfolio" class="scroll-btn-right">Scroll to Portfolio
+                <i class="ph-bold ph-arrow-bend-right-down"></i>
+            </a>
+            <div class="about-social-icons">
+                <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
+                <a href="#"><i class="ph-bold ph-linkedin-logo"></i></a>
+                <a href="#"><i class="ph-bold ph-github-logo"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <p>Here are some of the skills I have mastered:</p>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="ph-bold ph-code"></i>
+                <h3>Front-End Development</h3>
+                <p>Expertise in HTML, CSS, JavaScript, and modern frameworks like React.</p>
+            </div>
+            <div class="skill-item">
+                <i class="ph-bold ph-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Proficient in creating user-friendly and visually appealing designs.</p>
+            </div>
+            <div class="skill-item">
+                <i class="ph-bold ph-device-mobile"></i>
+                <h3>Responsive Design</h3>
+                <p>Skilled in building responsive and mobile-friendly websites.</p>
+            </div>
+            <div class="skill-item">
+                <i class="ph-bold ph-figma-logo"></i>
+                <h3>Design Tools</h3>
+                <p>Experienced with tools like Figma, Adobe XD, and Photoshop.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Portfolio</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <div class="portfolio-tabs">
+            <button class="tab-btn active" data-tab="app-design">App Design</button>
+            <button class="tab-btn" data-tab="web-design">Web Design</button>
+            <button class="tab-btn" data-tab="graphic-design">Graphic Design</button>
+        </div>
+        <div class="portfolio-content">
+            <div id="app-design" class="tab-content active">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/app1.jpg" alt="App Design 1">
+                        <h3>App Design 1</h3>
+                        <p>Short description of the app design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/app2.jpg" alt="App Design 2">
+                        <h3>App Design 2</h3>
+                        <p>Short description of the app design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div id="web-design" class="tab-content">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/web1.jpg" alt="Web Design 1">
+                        <h3>Web Design 1</h3>
+                        <p>Short description of the web design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/web2.jpg" alt="Web Design 2">
+                        <h3>Web Design 2</h3>
+                        <p>Short description of the web design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div id="graphic-design" class="tab-content">
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/graphic1.jpg" alt="Graphic Design 1">
+                        <h3>Graphic Design 1</h3>
+                        <p>Short description of the graphic design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="img/graphic2.jpg" alt="Graphic Design 2">
+                        <h3>Graphic Design 2</h3>
+                        <p>Short description of the graphic design project.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through any of the platforms below:</p>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="ph-bold ph-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:bimoadi.bramantyo@gmail.com">bimoadi.bramantyo@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="ph-bold ph-phone"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:+6281280593826">+62 812 8059 3826</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="ph-bold ph-linkedin-logo"></i>
+                <h3>LinkedIn</h3>
+                <p><a href="https://linkedin.com/in/bimo" target="_blank">linkedin.com/in/bimo</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="ph-bold ph-instagram-logo"></i>
+                <h3>Instagram</h3>
+                <p><a href="https://instagram.com/bimo" target="_blank">@bimo</a></p>
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="Project Image">
+                <h3 id="modal-title">Project Title</h3>
+                <p id="modal-description">Project description goes here.</p>
+                <p id="modal-info">Additional project information goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <h3>Contact Information</h3>
+                <ul class="contact-list">
+                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281280593826" target="_blank">+62 812 8059 3826</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:bimoadi.bramantyo@gmail.com">bimoadi.bramantyo@gmail.com</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/bimo" target="_blank">linkedin.com/in/bimo</a></li>
+                    <li><strong>Fiverr:</strong> <a href="https://fiverr.com/bimo" target="_blank">fiverr.com/bimo</a></li>
+                    <li><strong>Instagram:</strong> <a href="https://instagram.com/bimo" target="_blank">@bimo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Bimo Adi Bramantyo. All rights reserved. | <a href="#top">Back to Top</a></p>
+    </footer>
+
+    <a href="#about" class="scroll-btn">Scroll down
+        <i class="ph-bold ph-arrow-bend-right-down"></i>
+    </a>        
+</body>
+<script src="script.js"></script>
+</html>
